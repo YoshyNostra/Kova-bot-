@@ -1,0 +1,17 @@
+{
+  "name": "kova-bot",
+  "version": "1.0.0",
+  "description": "Bot de gestion complète de serveur Discord Kova",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

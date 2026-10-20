@@ -1,0 +1,112 @@
+{
+  "_commentaire": "Configuration centrale du bot Kova. Chaque module s'active avec true/false.",
+
+  "bot": {
+    "token": "TON_TOKEN_ICI",
+    "clientId": "TON_CLIENT_ID_ICI",
+    "guildId": "TON_GUILD_ID_ICI",
+    "prefix": "!",
+    "couleur": "#1B2A4A",
+    "couleurSecondaire": "#0D1629"
+  },
+
+  "modules": {
+    "setup": true,
+    "tickets": true,
+    "securite": true,
+    "moderation": true,
+    "vip": true,
+    "logs": true,
+    "vocal": true,
+    "backup": true
+  },
+
+  "setup": {
+    "creerRolesAutomatiquement": true,
+    "creerSalonsAutomatiquement": true
+  },
+
+  "roles": {
+    "staff": "Staff",
+    "moderateur": "Modérateur",
+    "vip": "VIP",
+    "membre": "Membre",
+    "mute": "Muted",
+    "nonVerifie": "Non vérifié"
+  },
+
+  "salons": {
+    "reglement": "reglement",
+    "annonces": "annonces",
+    "boutique": "boutique",
+    "tickets": "tickets",
+    "ticketOuvert": "ticket-{user}",
+    "categorieTickets": "Tickets",
+    "logs": "logs",
+    "vocalGeneral": "Vocal général"
+  },
+
+  "logs": {
+    "messages": true,
+    "membres": true,
+    "moderation": true,
+    "roles": true,
+    "salons": true,
+    "vocal": true,
+    "securite": true,
+    "tickets": true
+  },
+
+  "tickets": {
+    "transcriptHTML": true,
+    "claim": true,
+    "classementStaff": true,
+    "categories": [
+      { "label": "Assistance générale", "emoji": "❓", "description": "Une question, un souci d'utilisation" },
+      { "label": "Signaler un membre", "emoji": "🚨", "description": "Signaler un comportement contraire au règlement" },
+      { "label": "Achat boutique", "emoji": "🛒", "description": "Commander un article de la boutique" },
+      { "label": "Partenariat", "emoji": "🤝", "description": "Proposition de partenariat" }
+    ]
+  },
+
+  "securite": {
+    "antiNuke": true,
+    "antiRaid": true,
+    "filtreComptesRecents": true,
+    "filtreComptesRecentsJours": 7,
+    "antiPub": true,
+    "listeMotsInterdits": ["http://", "https://", "discord.gg/", "free-nitro", "steamgift"],
+    "sanctionAuto": true,
+    "sanctionParDefaut": "timeout24h",
+    "nombreChangementsRoleParMinute": 8,
+    "nombreBansParMinute": 4,
+    "nombreCreationsSalonParMinute": 4,
+    "nombreJoinsParMinute": 12
+  },
+
+  "moderation": {
+    "dureeMuteParDefautMinutes": 60,
+    "avertissementAvantBlacklist": 3,
+    "dmAuto": true
+  },
+
+  "vip": {
+    "actif": true,
+    "paypal": "ton-lien-paypal.me",
+    "dureeJours": 30,
+    "salonsPrives": ["vip-chat", "vip-annonces"],
+    "roleVisibilite": true
+  },
+
+  "vocal": {
+    "vocalTemporaire24h": true,
+    "nomSalonTemporaire": "🔊 Vocal de {user}",
+    "hubs": ["➕ Créer un vocal"]
+  },
+
+  "backup": {
+    "intervalleHeures": 12,
+    "dossier": "./backups",
+    "maxBackups": 20
+  }
+}
